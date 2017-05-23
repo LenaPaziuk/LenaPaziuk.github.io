@@ -1,36 +1,15 @@
 .mygrid {
     width: 600px;
     display: grid;
-    margin: 10px auto;
-
     grid-gap: 10px;
     
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 1fr 10fr 2fr;
-    grid-template-areas: "header header"
-                        "nawigacja reklama"
-                        "artykul reklama"
-                        "footer footer";
-}
-
-footer {
-    grid-area: footer;
-}
-
-article {
-    grid-area: artykul;
-}
-
-.ads{
-    grid-area: reklama;
-}
-
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nawigacja;
+    grid-template-columns: 150px 200px;
+    grid-template-rows;20px 40px 60px 40px;
+    grid-template-areas: 
+        "header header"
+        "nawigacja reklama"
+        "artykul reklama"
+        "footer footer"
 }
 
 .mygrid:hover {
@@ -38,5 +17,23 @@ nav {
 }
 
 .mygrid>* {
-    border: 1px dashed yellow;
+    border: 3px dashed yellow;
+}
+header{
+    grid-area: header;
+}
+.nav{
+    grid-area: :reklama;
+}
+.ads{
+    grid-area: navigacja;
+}
+article{
+    grid-area: artykul;
+}
+footer{
+    grid-area: footer;
+}
+.mygrid:hover{
+    opacity: 0.2 ;
 }
