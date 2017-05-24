@@ -4,37 +4,45 @@
     display: grid;
     grid-gap: 10px;
     
-    grid-template-columns: 150px 200px;
-    grid-template-rows;20px 40px 60px 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows;200px 20px 1fr;
     grid-template-areas: 
-        "header header"
-        "artykul reklama"
-        "nawigacja reklama"
-        "footer footer"
+        "tytul tytul logo"
+        "was was was"
+        "kol1 kol2 kol3"
+        
+
+}
+tytul{
+    grid-area: tytul;
+    color:antiquewhite;
 }
 
-.mygrid:hover {
-    opacity: 0.2;
+logo{
+    grid-area:logo;
+
 }
 
-.mygrid>* {
-    border: 3px dashed yellow;
+logo>.circle{
+    background: #ffffff url("myphoto.jpg") no-repeat center;
+    width: 200px;
+    height: 200px;
+    
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin: 12px 0px;
+    
 }
-header{
-    grid-area: header;
+    
+.was{
+    grid-area: was;
 }
-.nav{
-    grid-area: :reklama;
+
+.kol1{
+    grid-area: kol1;
 }
-.ads{
-    grid-area: navigacja;
-}
-article{
-    grid-area: artykul;
-}
-footer{
-    grid-area: footer;
-}
-.mygrid:hover{
-    opacity: 0.2 ;
+
+.kol2{
+    grid-area: kol2;
 }
