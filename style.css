@@ -113,5 +113,23 @@
   padding: 16px 32px;
 }
 
-navigacja{
-grid-area: navigacja;Ъ
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: skyblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: palevioletred;
+    background-color: transparent;
+    text-decoration: underline;
+}
