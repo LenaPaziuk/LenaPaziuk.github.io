@@ -1,0 +1,65 @@
+.Illustration {
+    width: 1fr;
+    display: grid;
+    margin: 10px;
+    background-color: bisque;
+     
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 300px 1fr;   
+    grid-template-areas:        
+        "ilustr ilustr ilustr"
+        "obiad1 obiad2 obiad3"
+        "onegin1 onegin2 onegin3";
+}
+
+
+
+.ilustr {
+    grid-area: ilustr;
+    text-align: center;
+}
+
+
+
+
+
+.obiad{
+    position: relative;
+    width: 100%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.obiad1 {
+    grid-area: obiad1;
+    }
+.obiad2 {
+    grid-area: obiad2;
+    }
+.obiad3 {
+    grid-area: obiad3;
+    }
+
+
+
+
+
+.onegin{
+    position: relative;
+    width: 100%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.onegin1 {
+    grid-area: onegin1;
+    }
+.onegin2 {
+    grid-area: onegin2;
+    }
+.onegin3 {
+    grid-area: onegin3;
+    }
