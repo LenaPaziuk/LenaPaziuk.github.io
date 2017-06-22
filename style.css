@@ -133,3 +133,72 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
+
+
+.kkk{
+    width: 1fr;
+    display: grid;
+    margin: 10px;
+    background-color: bisque;
+     
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 100px;   
+    grid-template-areas:       
+     "KK KK KK"
+    "Hom Hom Hom"
+   
+}
+
+    
+.KK{
+    grid-area: KK;
+    text-align: center;
+    
+    }
+
+.Hom{
+    grid-area: Hom;
+    text-align: left;
+    color: azure;
+    font-size: 50px;
+    
+}
+
+.Fot{
+    text-align: center;
+    
+    }
+
+.Videoo{
+    width: 1fr;
+    display: grid;
+    margin: 10px;
+    background-color: bisque;
+     
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 200px 500px 100px;
+    grid-template-areas:       
+     "ImVid ImVid ImVid"
+    "Vid Vid Vid"
+    "Pow Pow Pow"
+    
+}
+
+.ImVid{
+    grid-area: ImVid;
+    text-align: center;
+}
+
+.Vid{
+    grid-area: Vid;
+    text-align: center;
+    }
+
+.Pow{
+    text-align: left;
+    color: azure;
+    font-size: 50px;
+    
+}

@@ -6,11 +6,12 @@
      
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 300px 1fr;   
+    grid-template-rows: 200px 300px 1fr 100px;
     grid-template-areas:        
         "ilustr ilustr ilustr"
         "obiad1 obiad2 obiad3"
-        "onegin1 onegin2 onegin3";
+        "onegin1 onegin2 onegin3"
+        "Dom Dom Dom"
 }
 
 
@@ -63,3 +64,10 @@
 .onegin3 {
     grid-area: onegin3;
     }
+
+
+.Dom{
+    text-align: left;
+    color: azure;
+    font-size: 50px;
+}
